@@ -116,7 +116,8 @@ elif [[ "$choice" == "n" || "$choice" == "N" ]]; then
     # Display each profile with a number for selection
     for p in $profiles; do
         uuid=$(echo "$p" | tr -d '/')
-        echo "  $i) $uuid"
+        pLabel=$(dconf read "/org/gnome/Ptyxis/Profiles/$uuid/label" | tr -d '/')
+        echo "  $i) $pLabel [$uuid]"
         uuid_map[$i]=$uuid
         ((i++))
     done
