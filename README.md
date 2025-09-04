@@ -95,7 +95,7 @@ Ptyxis uses UUIDs to identify profiles. Common built-in profiles include:
 2. If the script doesn't find any profiles, verify Ptyxis is installed
 3. For invalid UUID errors, check the profile exists using:
    ```bash
-   dconf read /org/gnome/Ptyxis/Profiles/your-uuid-here/visible-name
+   dconf read /org/gnome/Ptyxis/Profiles/your-uuid-here/label
    ```
 
 ## License
